@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import { firebase, googleAuthProvider } from "../firebase/firebase-config";
 import { types } from "../types/types";
 import { finishLoading, startLoading } from "./ui";
@@ -82,7 +83,7 @@ export const startLogout = () => {
 
     dispatch(logout());
 
-    dispatch(noteLogout());//cuando nos deslogueamos
+    // dispatch(noteLogout());
   };
 };
 
